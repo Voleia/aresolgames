@@ -12,12 +12,25 @@
                 color:white;
                 background-color: #171717;
             }
-            #ms {
+            .ms {
                 font-family: "MedievalSharp";
             }
-            #cn {
+            .cn {
                 font-family: "Cinzel";
             }
+            
+            .contentbox {
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top: 10px;
+                padding: 30px;
+                border-width: 8px;
+                border-radius: 25px;
+                border-color: black;
+                background-color: #0c0c0c;
+                color:white;
+            }
+
             .topnav {
                 overflow: hidden;
                 background-color: #000000;
@@ -98,16 +111,24 @@
                     display: block;
                     text-align: left;
                 }
+                .topnav {
+                    position:relative;
+                }
+                .content {
+                    padding-top:5px;
+                }
+                .contentbox {
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
             }
         </style>
     </head>
     <body>    
         <div class="topnav" id="tn">
             <img src="AGLogoSidebar.png"/>
-            <a class="active" href="#home">Game</a>
-            <a href="#news">Concept</a>
-            <a href="#news">Features</a>
-            <a href="#contact">Roadmap</a>
+            <a href="https://discord.gg/ashea">Join Ashea</a>
+            <a href="#aboutme">About Me</a>
             <a href="https://discord.gg/tJ7bSNUQRG" class="split">Join our Discord</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -115,99 +136,10 @@
         </div>
 
         <div class="content"> 
-            <center>
-                <h1 id="ms">
-                    <strong>
-                        Aresol Games
-                    </strong>
-                </h1>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-                <p>test</p>
-            </center>
+            <div class="contentbox">
+                <center><h1 class="ms" id="aboutme"><strong>About Me</strong></h1></center>
+                <p>Hey! I'm Voleia. As I'm sure you can see, this site is pretty basic right now. Just figured I'd make it since I'm too tired to think about the game right now lol. Anyway though, this site is mainly for a game I'm making called Legacy of Solaris, a Grand Strategy RTS based on a minecraft server called Ashea. There's a lot that I plan to add, but for now it's mostly just greyboxxing so I can't really share pictures lol. I'll update this site more later, if I continue this project :)</p>
+            </div>
         </div>
 
         <script>
