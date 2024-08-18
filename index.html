@@ -18,16 +18,54 @@
             .cn {
                 font-family: "Cinzel";
             }
+            #headerA {
+                background-image: url("AshMapA.jpg");    
+                background-size: 100%;
+                padding-top: 76px;
+                padding-bottom: 12px;
+            }
+            #headerB {
+                background-image: url("AshMapB.png");    
+                background-size: 100%;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+
+            .footer {
+                background-color:#0b0b0b;
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color:white;
+            }
+
+            .footer a {
+                color:white;
+                font-weight: bolder;
+                font-style: normal;
+                text-decoration: none;
+            }
             
+            a {
+                color:white;
+                font-weight: bolder;
+                font-style: italic;
+                text-decoration: none;
+            }
+
             .contentbox {
                 margin-left: 30%;
                 margin-right: 30%;
                 margin-top: 10px;
                 padding: 30px;
-                border-width: 8px;
+                border-width: 5px;
                 border-radius: 25px;
                 border-color: black;
-                background-color: #0c0c0c;
+                border-style: solid;
+                background-color: #000000da;
                 color:white;
             }
 
@@ -82,10 +120,6 @@
                 color: rgb(0, 0, 0);
             }
 
-            .content {
-                padding-top: 76px;
-            }
-
             @media screen and (max-width: 900px) {
                 .topnav a:not(:first-child) {display: none;}
                 .topnav a.icon {
@@ -114,12 +148,12 @@
                 .topnav {
                     position:relative;
                 }
-                .content {
-                    padding-top:5px;
+                #headerBG {
+                    padding-top: 5px;
                 }
                 .contentbox {
-                    margin-left: 5%;
-                    margin-right: 5%;
+                    margin-left: 9%;
+                    margin-right: 9%;
                 }
             }
         </style>
@@ -135,11 +169,23 @@
             </a>
         </div>
 
-        <div class="content"> 
-            <div class="contentbox">
-                <center><h1 class="ms" id="aboutme"><strong>About Me</strong></h1></center>
-                <p>Hey! I'm Voleia. As I'm sure you can see, this site is pretty basic right now. Just figured I'd make it since I'm too tired to think about the game right now lol. Anyway though, this site is mainly for a game I'm making called Legacy of Solaris, a Grand Strategy RTS based on a minecraft server called Ashea. There's a lot that I plan to add, but for now it's mostly just greyboxxing so I can't really share pictures lol. I'll update this site more later, if I continue this project :)</p>
+        <div class="content">
+            <div id="headerA">
+                <div class="contentbox">
+                    <center><h1 class="ms" id="aboutme"><strong>Legacy of Solaris</strong></h1></center>
+                    <p>Legacy of Solaris is a Grand Strategy RTS I'm currently developing, based on the period between the fall of the Phoenixian Empire and the crusade of the <a href="https://wiki.aresol.net/wiki/index.php/Imperium_Sanctum_Solaris">Imperium Sanctum Solaris</a>.</p>
+                </div>
             </div>
+            <div id="headerB">
+                <div class="contentbox">
+                    <center><h1 class="ms" id="aboutme"><strong>About Me</strong></h1></center>
+                    <p>Hey! I'm Voleia. As I'm sure you can see, this site is pretty basic right now. Just figured I'd make it since I'm too tired to think about the game right now lol. Anyway though, this site is mainly for a game I'm making called Legacy of Solaris, a Grand Strategy RTS based on a minecraft server called Ashea. There's a lot that I plan to add, but for now it's mostly just greyboxxing so I can't really share pictures lol. I'll update this site more later, if I continue this project :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; <a>Aresol Games</a> <span id="currentYear"></span></p>
         </div>
 
         <script>
@@ -151,6 +197,11 @@
                     x.className = "topnav";
                 }
             }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var currentYear = new Date().getFullYear();
+                document.getElementById('currentYear').textContent = currentYear;
+            });
         </script>
     </body>
 </html>
